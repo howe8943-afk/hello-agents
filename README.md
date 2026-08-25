@@ -19,10 +19,15 @@
 ```powershell
 uv sync
 uv run hello-agent
-uv run pytest
 ```
 
 需要 API Key 的练习，将本地配置写入 `.env`。可以从 `.env.example` 开始；真实密钥不会提交到 Git。
+
+日常实验统一放在 `experiments/`，每个实验可以单独建立目录和 README：
+
+```powershell
+uv run python experiments/<实验目录>/main.py
+```
 
 ## 我的学习路线
 
@@ -147,6 +152,6 @@ uv run pytest
 ## 仓库约定
 
 - 使用 `uv sync` 同步依赖，使用 `uv run` 执行命令。
-- 新增能力时，同时补充对应测试和运行说明。
+- 新增实验时，同时补充运行命令、实验结果和问题记录。
 - 不提交 `.env`、API Key 或其他敏感信息。
 - 先做小而可验证的实验，再扩展到复杂 Agent。
