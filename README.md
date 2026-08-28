@@ -6,13 +6,13 @@
 
 ## 当前状态
 
-| 项目 | 状态 |
-| --- | --- |
-| 学习阶段 | Stage 0：理解 Agent 基础概念 |
-| 当前目标 | 跑通最小 Agent Loop，并理解工具调用过程 |
-| Python | 3.12+ |
-| 包管理 | [uv](https://docs.astral.sh/uv/) |
-| 仓库 | [howe8943-afk/hello-agents](https://github.com/howe8943-afk/hello-agents) |
+| 项目     | 状态                                                                     |
+| -------- | ------------------------------------------------------------------------ |
+| 学习阶段 | Stage 0：理解 Agent 基础概念                                             |
+| 当前目标 | 跑通最小 Agent Loop，并理解工具调用过程                                  |
+| Python   | 3.12+                                                                    |
+| 包管理   | [uv](https://docs.astral.sh/uv/)                                          |
+| 仓库     | [howe8943-afk/hello-agents](https://github.com/howe8943-afk/hello-agents) |
 
 ## 环境与运行
 
@@ -35,16 +35,16 @@ uv run python experiments/<实验目录>/main.py
 
 ### Stage 0：理解 Agent
 
-- [ ] 区分 chatbot、workflow、agent 和 multi-agent。
-- [ ] 理解 `observe -> think -> act -> observe` 基本循环。
-- [ ] 记录一个适合 Agent、而不是普通脚本的实际场景。
-- [ ] 完成 Hello-Agents 入门章节笔记。
+- [X] 区分 chatbot、workflow、agent 和 multi-agent。
+- [X] 理解 `observe -> think -> act -> observe` 基本循环。
+- [X] 记录一个适合 Agent、而不是普通脚本的实际场景。
+- [X] 完成 Hello-Agents 入门章节笔记。
 
 **阶段产出：** 一篇基础概念笔记，以及对一个真实应用场景的判断。
 
 ### Stage 1：实现最小 Agent Loop
 
-- [ ] 调用一个 LLM API 完成对话。
+- [X] 调用一个 LLM API 完成对话。
 - [ ] 让模型输出结构化 JSON。
 - [ ] 编写一个简单工具，例如计算器、搜索或文件读取。
 - [ ] 解析 tool call，执行工具并把结果传回模型。
@@ -117,12 +117,12 @@ uv run python experiments/<实验目录>/main.py
 
 ## 实践项目
 
-| 项目 | 阶段 | 状态 | 记录 |
-| --- | --- | --- | --- |
-| Hello Agent 初始化 | Stage 0 | 已完成 | `src/hello_agent/` |
-| Calculator Agent | Stage 1 | 未开始 | 待实现工具调用循环 |
-| Web Research Agent | Stage 2 | 未开始 | 待实现搜索、引用和总结 |
-| PDF QA Agent | Stage 2 | 未开始 | 待实现 RAG 与文档问答 |
+| 项目                | 阶段    | 状态   | 记录                       |
+| ------------------- | ------- | ------ | -------------------------- |
+| Hello Agent 初始化  | Stage 0 | 已完成 | `src/hello_agent/`       |
+| Calculator Agent    | Stage 1 | 未开始 | 待实现工具调用循环         |
+| Web Research Agent  | Stage 2 | 未开始 | 待实现搜索、引用和总结     |
+| PDF QA Agent        | Stage 2 | 未开始 | 待实现 RAG 与文档问答      |
 | Coding Review Agent | Stage 3 | 未开始 | 待实现 diff 分析与风险排序 |
 
 ## 学习笔记

@@ -8,10 +8,14 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "google-search-results>=2.4.2",
+    "numpy>=2.5.2",
     "openai>=3.3.1",
     "python-dotenv>=1.2.3",
     "requests>=2.34.2",
     "tavily-python>=0.8.0",
+    "torch>=2.13.0",
+    "torchvision>=0.28.0",
 ]
 
 [project.scripts]
